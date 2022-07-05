@@ -1,0 +1,56 @@
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{amsmath,amssymb}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{cleveref}
+\usepackage{graphicx}
+% \usepackage{adjustbox}
+% \usepackage{subcaption}
+
+% Macros
+\newcommand{\unibo}{\textsc{Alma Mater Studiorum}---Universit\`a di Bologna}
+\newcommand{\uniurb}{Universit\`a degli Studi di Urbino Carlo Bo}
+\newcommand{\disi}{Dipartimento di Informatica -- Scienza e Ingegneria (DISI)}
+\newcommand{\almaai}{Alma Mater Research Institute for Human-Centered Artificial Intelligence (AlmaAI)}
+\newcommand{\dispea}{Dipartimento di Scienze Pure e Applicate (DiSPeA)}
+
+\newcommand{\twopkt}{\textsc{2P-Kt}}
+\newcommand{\tuprolog}{tuProlog}
+\newcommand{\xai}{XAI}
+\newcommand{\psyke}{PSyKE}
+
+\newcommand*{\vurl}[2][\today]{\url{#2} [Online; last accessed #1].}
+\newenvironment{inlinelist}{\begin{enumerate*}[label=\emph{(\roman{*})}]}{\end{enumerate*}}
+
+% \usepackage[disable]{todonotes}
+\usepackage[]{todonotes}
+\newcommand{\gcnote}[1]{{\todo[color=green,inline]{\textbf{Ciatto:} #1}}}
+\newcommand{\gctodo}[1]{{\todo[size=\tiny,color=green]{\textbf{Ciatto:} #1}}}
+\newcommand{\aanote}[1]{{\todo[color=cyan,inline]{\textbf{Agiollo:} #1}}}
+\newcommand{\aatodo}[1]{{\todo[size=\tiny,color=cyan]{\textbf{Agiollo:} #1}}}
+\newcommand{\fsnote}[1]{{\todo[color=red,inline]{\textbf{Sabba:} #1}}}
+\newcommand{\fstodo}[1]{{\todo[size=\tiny,color=red]{\textbf{Sabba:} #1}}}
+\newcommand{\rcnote}[1]{{\todo[color=magenta,inline]{\textbf{RC:} #1}}}
+\newcommand{\rctodo}[1]{{\todo[size=\tiny,color=magenta]{\textbf{RC:} #1}}}
+\newcommand{\mmnote}[1]{{\todo[color=orange,inline]{\textbf{MM:} #1}}}
+\newcommand{\mmtodo}[1]{{\todo[size=\tiny,color=orange]{\textbf{MM:} #1}}}
+
+\lstset{
+    showstringspaces=false,
+    basicstyle=\tiny\ttfamily,
+    commentstyle={\color{olive}},
+    identifierstyle=\color{black},
+    ndkeywordstyle={\color{blue}},
+    stringstyle={\color{magenta}},
+    emphstyle={},
+    keywordstyle={\color{blue}},
+    breaklines=true,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    numbersep=10pt,
+    tabsize=2,
+    extendedchars=true,
+    frame=trBL,
+    frameround=fttt,
+}
